@@ -100,7 +100,7 @@ public class ContentService {
     }
 
     public void updateHlsUrl(String movieId, String hlsUrl){
-        log.info("Updating hlsurl for movie: {}", movieId);
+        log.info("Updating HLS-Url for movie: {}", movieId);
         Movie movie = movieRepository.findById(movieId)
                 .orElseThrow(() ->new RuntimeException("Movie not found" + movieId));
         movie.setHlsUrl(hlsUrl);
