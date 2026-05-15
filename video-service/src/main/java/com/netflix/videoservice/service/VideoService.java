@@ -26,7 +26,7 @@ public class VideoService {
     @Value("${aws.s3.bucket-name}")
     private String bucketName;
 
-    private static final String VIDEO_UPLOADED_TOPIC = "video_uploaded";
+    private static final String VIDEO_UPLOADED_TOPIC = "video.uploaded";
 
     //Upload the video to AWS S3 and publish video_uploaded event to KAFKA
     /*
